@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 # -----------------------------------------------------------------------------
-# 2. 模擬資料庫 (Database)
+# 2. 完整歌詞資料庫 (Full Database)
 # -----------------------------------------------------------------------------
 SONG_DATABASE = [
     {
@@ -19,6 +19,7 @@ SONG_DATABASE = [
         "album": "minisode 3: TOMORROW",
         "year": "2024",
         "tags": ["Title", "Emotional", "Rock"],
+        "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
         "lyrics": [
             ("기억해", "記得嗎"),
             ("과거의 틈 사이로", "在過去的縫隙之間"),
@@ -32,7 +33,14 @@ SONG_DATABASE = [
             ("다시 만날 우리인 거야", "我們是註定會再次相遇的"),
             ("(Say my name)", "(呼喚我的名字)"),
             ("나를 안아줘", "擁抱我吧"),
-            ("약속했던 것처럼", "就像約定過的那樣")
+            ("약속했던 것처럼", "就像約定過的那樣"),
+            ("먼지 쌓인 우리의 왕관", "我們積滿灰塵的皇冠"),
+            ("영혼에 새겨진 꿈", "刻在靈魂深處的夢"),
+            ("폐허 속에서도 빛나는", "在廢墟中依然閃耀的"),
+            ("너라는 구원", "名為你的救贖"),
+            ("마치 데자뷔", "就像既視感 (Deja Vu)"),
+            ("너와 나, 다시 여기", "你和我，再次在這裡"),
+            ("약속된 미래처럼", "就像被承諾的未來一樣")
         ]
     },
     {
@@ -41,6 +49,7 @@ SONG_DATABASE = [
         "album": "The Name Chapter: TEMPTATION",
         "year": "2023",
         "tags": ["Title", "Dance", "Sexy"],
+        "color": "linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)",
         "lyrics": [
             ("생각은 곶, 숨을 멈춰", "思緒立即停止，屏住呼吸"),
             ("When you get back", "當你回來時"),
@@ -53,7 +62,16 @@ SONG_DATABASE = [
             ("넌 능숙히 잠긴 내 문을 열어", "你熟練地打開我上鎖的門"),
             ("어떡해 저 별이 보여", "怎麼辦 我看見星星了"),
             ("The devil said", "惡魔說道"),
-            ("Gimme gimme more", "給我 給我更多")
+            ("Gimme gimme more", "給我 給我更多"),
+            ("Gimme gimme more", "給我 給我更多"),
+            ("이리 와서 더", "過來這邊 再多一點"),
+            ("같이 놀자 더", "一起玩吧 再多一點"),
+            ("Sugar rush-ush", "糖分衝擊"),
+            ("Sugar rush-ush", "糖分衝擊"),
+            ("나쁜 넌 liar", "壞壞的你是個說謊者"),
+            ("내게 너란 달콤함", "對我來說你這份甜蜜"),
+            ("거부할 수 없는 난", "我無法拒絕"),
+            ("나를 삼켜버린 밤", "吞噬了我的夜晚")
         ]
     },
     {
@@ -62,6 +80,7 @@ SONG_DATABASE = [
         "album": "The Chaos Chapter: FREEZE",
         "year": "2021",
         "tags": ["Title", "Rock", "Angst"],
+        "color": "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
         "lyrics": [
             ("I know I love you", "我知道我愛你"),
             ("이 제로의 세계 속", "在這個歸零的世界裡"),
@@ -74,7 +93,38 @@ SONG_DATABASE = [
             ("Say you love me", "說你愛我"),
             ("세계의 끝까지", "直到世界的盡頭"),
             ("All or nothing", "孤注一擲"),
-            ("난 너에게 다 걸고 싶어", "我想把一切都賭在你身上")
+            ("난 너에게 다 걸고 싶어", "我想把一切都賭在你身上"),
+            ("I know I love you", "我知道我愛你"),
+            ("Say you love me", "說你愛我"),
+            ("Say you love me", "說你愛我"),
+            ("세계의 끝까지", "直到世界的盡頭"),
+            ("All or nothing", "孤注一擲"),
+            ("내가 가진 모든 걸 줄게", "我會給你我擁有的一切"),
+            ("I know I love you", "我知道我愛你")
+        ]
+    },
+    {
+        "id": "chasing_that_feeling",
+        "title": "Chasing That Feeling",
+        "album": "The Name Chapter: FREEFALL",
+        "year": "2023",
+        "tags": ["Title", "Retro", "Synth-Pop"],
+        "color": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+        "lyrics": [
+            ("Chasing that feeling", "追逐那種感覺"),
+            ("Chasing that feeling", "追逐那種感覺"),
+            ("It's all I know", "這是我所知道的一切"),
+            ("내 숙명인 걸", "這是我的宿命"),
+            ("죽어도 못 가 천국엔", "死也去不了天堂"),
+            ("난 널 찾아 헤매", "我尋尋覓覓著你"),
+            ("고통이래도", "即使是痛苦"),
+            ("기꺼이 즐겨 줄게", "我也會欣然享受"),
+            ("And I'm chasing that feeling", "而我正在追逐那種感覺"),
+            ("Chasing that feeling", "追逐那種感覺"),
+            ("타버린대도", "即使燃燒殆盡"),
+            ("그 빛을 향해", "也要向著那道光"),
+            ("Keep on chasing", "繼續追逐"),
+            ("Chasing that feeling", "追逐那種感覺")
         ]
     },
     {
@@ -83,6 +133,7 @@ SONG_DATABASE = [
         "album": "The Dream Chapter: MAGIC",
         "year": "2019",
         "tags": ["Title", "Magic", "School"],
+        "color": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
         "lyrics": [
             ("나만 빼고 다 행복한 것만 같아", "好像除了我以外 大家都很幸福"),
             ("우는 것보다 웃을 때가 더 아파", "比起哭泣 笑的時候更痛苦"),
@@ -91,7 +142,17 @@ SONG_DATABASE = [
             ("지금 내 손을 잡아", "現在抓住我的手"),
             ("도망갈까? run away", "要逃跑嗎？run away"),
             ("나와 함께할 거야", "會和我在一起的"),
-            ("마법 같은 밤", "魔法般的夜晚")
+            ("마법 같은 밤", "魔法般的夜晚"),
+            ("캄캄한 밤 그 계단 밑에서", "漆黑的夜晚 在那樓梯之下"),
+            ("널 본 순간 마법은 시작됐어", "看見你的瞬間 魔法就開始了"),
+            ("네 눈물로 주문을 만들자", "用你的眼淚來製造咒語吧"),
+            ("다신 울지 않게", "讓你不再哭泣"),
+            ("내 영원히 돼줘", "成為我的永遠吧"),
+            ("내 이름 불러줘", "呼喚我的名字吧"),
+            ("Run away, run away", "逃跑吧，逃跑吧"),
+            ("Run away with me", "跟著我一起逃跑"),
+            ("세상의 끝에서", "在世界的盡頭"),
+            ("Forever together", "永遠在一起")
         ]
     }
 ]
@@ -109,33 +170,81 @@ def go_back():
     st.session_state.selected_song = None
 
 # -----------------------------------------------------------------------------
-# 4. 樣式 (Custom CSS) - 增加一點 TXT 風格
+# 4. MOA 風格樣式 (Custom CSS)
 # -----------------------------------------------------------------------------
 st.markdown("""
     <style>
+    /* 全局背景：夢幻極淡藍 */
     .stApp {
-        background-color: #F8FAFC;
+        background-color: #F4F8FB;
+        background-image: linear-gradient(180deg, #F4F8FB 0%, #F0F4FF 100%);
+        color: #334155;
     }
-    .song-card {
-        padding: 1.5rem;
-        border-radius: 10px;
-        background-color: white;
-        border: 1px solid #E2E8F0;
-        margin-bottom: 1rem;
-        transition: transform 0.2s;
+    
+    /* 標題漸層色 */
+    h1, h2, h3 {
+        font-family: 'Helvetica Neue', sans-serif;
     }
-    .song-card:hover {
-        border-color: #3B82F6;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    }
-    .lyric-row {
-        padding: 10px 0;
-        border-bottom: 1px dashed #eee;
-    }
-    h1 {
-        background: -webkit-linear-gradient(45deg, #2563EB, #9333EA);
+    .main-title {
+        background: -webkit-linear-gradient(45deg, #3B82F6, #8B5CF6);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-weight: 800;
+    }
+
+    /* 隱藏預設的主選單漢堡 */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+
+    /* 卡片樣式優化 */
+    .song-card-container {
+        background: white;
+        padding: 20px;
+        border-radius: 16px;
+        border: 1px solid #EBF0F5;
+        box-shadow: 0 4px 15px rgba(220, 230, 240, 0.4);
+        margin-bottom: 15px;
+        transition: all 0.3s ease;
+    }
+    .song-card-container:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+        border-color: #BFDBFE;
+    }
+
+    /* 按鈕樣式 (Primary Button Override) */
+    .stButton button {
+        background-color: white;
+        color: #64748B;
+        border: 1px solid #CBD5E1;
+        border-radius: 20px;
+        padding: 4px 16px;
+        font-size: 14px;
+        transition: all 0.3s;
+    }
+    .stButton button:hover {
+        background-color: #EFF6FF;
+        color: #3B82F6;
+        border-color: #3B82F6;
+    }
+
+    /* 歌詞頁面樣式 */
+    .lyric-box {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        margin-bottom: 10px;
+    }
+    .korean-text {
+        color: #1E293B;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+    .chinese-text {
+        color: #64748B;
+        font-size: 0.95rem;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -144,15 +253,15 @@ st.markdown("""
 # 5. 主程式邏輯
 # -----------------------------------------------------------------------------
 
-# --- HEADER ---
-col1, col2 = st.columns([1, 5])
+# --- HEADER (簡約風格) ---
+col1, col2 = st.columns([1, 6])
 with col1:
-    st.markdown("# ✨")
+    st.markdown("<div style='font-size: 40px; text-align: center;'>✨</div>", unsafe_allow_html=True)
 with col2:
-    st.markdown("# TXT 歌詞庫")
-    st.caption("MOA LIBRARY - Python Edition")
+    st.markdown("<h1 class='main-title'>TXT 歌詞庫</h1>", unsafe_allow_html=True)
+    st.caption("MOA LIBRARY • ONE DREAM")
 
-st.divider()
+st.markdown("---")
 
 # --- 邏輯判斷：顯示列表還是顯示歌詞 ---
 
@@ -160,7 +269,7 @@ if st.session_state.selected_song is None:
     # === 首頁：搜尋與列表 ===
     
     # 搜尋框
-    search_term = st.text_input("🔍 搜尋歌名...", placeholder="輸入 Deja Vu, Run Away...")
+    search_term = st.text_input("", placeholder="🔍 搜尋歌名 (例如: Deja Vu, Magic...)", label_visibility="collapsed")
     
     # 篩選邏輯
     filtered_songs = []
@@ -173,57 +282,81 @@ if st.session_state.selected_song is None:
     else:
         filtered_songs = SONG_DATABASE
 
-    # 顯示結果
-    st.markdown(f"**找到 {len(filtered_songs)} 首歌曲**")
+    # 結果統計
+    st.markdown(f"<p style='color: #94A3B8; font-size: 0.9rem; margin-bottom: 20px;'>找到 {len(filtered_songs)} 首歌曲</p>", unsafe_allow_html=True)
     
+    # 使用 columns 讓排列更整齊
     for song in filtered_songs:
-        # 由於 Streamlit 按鈕不能包住 HTML div，我們用 container 模擬
         with st.container():
-            col_info, col_btn = st.columns([4, 1])
-            with col_info:
-                st.subheader(song['title'])
-                st.caption(f"🎵 {song['album']} • {song['year']}")
-                st.markdown(" ".join([f"`#{tag}`" for tag in song['tags']]))
-            with col_btn:
-                # 每個按鈕需要唯一的 key
+            # 建立一個模擬的卡片佈局
+            cols = st.columns([0.1, 4, 1.2])
+            
+            with cols[0]:
+                # 裝飾性的小直條
+                st.markdown(f"<div style='height: 100%; width: 4px; background: {song.get('color', '#ccc')}; border-radius: 4px;'></div>", unsafe_allow_html=True)
+            
+            with cols[1]:
+                st.markdown(f"<h3 style='margin:0; font-size:1.2rem; color:#334155;'>{song['title']}</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='margin:0; font-size:0.85rem; color:#94A3B8;'>{song['album']} • {song['year']}</p>", unsafe_allow_html=True)
+                
+                # 標籤顯示
+                tags_html = "".join([f"<span style='background:#F1F5F9; color:#64748B; padding:2px 8px; border-radius:10px; font-size:0.75rem; margin-right:5px;'>#{tag}</span>" for tag in song['tags']])
+                st.markdown(f"<div style='margin-top:6px;'>{tags_html}</div>", unsafe_allow_html=True)
+                
+            with cols[2]:
+                st.write("") # Spacer
                 if st.button("查看歌詞", key=f"btn_{song['id']}"):
                     select_song(song)
-                    st.rerun() # 重新執行以切換頁面
-            st.markdown("---")
+                    st.rerun()
+            
+            st.markdown("<div style='margin-bottom: 20px;'></div>", unsafe_allow_html=True)
 
 else:
     # === 內頁：歌詞顯示 ===
     
     song = st.session_state.selected_song
     
-    # 返回按鈕
-    if st.button("← 返回搜尋"):
+    # 頂部導航
+    if st.button("← 返回列表"):
         go_back()
         st.rerun()
     
-    # 歌曲標題區
+    # 專輯封面風格的 Header
+    gradient_bg = song.get('color', 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)')
     st.markdown(f"""
-    <div style="background: linear-gradient(to right, #3B82F6, #9333EA); padding: 20px; border-radius: 12px; color: white; margin-bottom: 20px;">
-        <h2 style="margin:0;">{song['title']}</h2>
-        <p style="opacity:0.8; margin-top:5px;">{song['album']}</p>
+    <div style="background: {gradient_bg}; padding: 30px; border-radius: 16px; color: white; margin: 10px 0 30px 0; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);">
+        <p style="font-size: 0.8rem; opacity: 0.9; letter-spacing: 1px; margin-bottom: 5px;">TOMORROW X TOGETHER</p>
+        <h1 style="color: white; margin:0; font-size: 2rem; font-weight: 800;">{song['title']}</h1>
+        <p style="opacity:0.9; margin-top:8px; font-size: 0.95rem;">💿 {song['album']}</p>
     </div>
     """, unsafe_allow_html=True)
     
-    # 歌詞顯示 (兩欄式)
-    col_kr, col_zh = st.columns(2)
+    # 歌詞顯示區域
     
-    with col_kr:
-        st.markdown("### 🇰🇷 Korean")
-    with col_zh:
-        st.markdown("### 🇹🇼 Chinese")
-    
-    for kr, zh in song['lyrics']:
-        c1, c2 = st.columns(2)
-        with c1:
-            st.markdown(f"**{kr}**")
-        with c2:
-            st.markdown(f"<span style='color:#64748B'>{zh}</span>", unsafe_allow_html=True)
-        st.markdown("<hr style='margin: 5px 0; border: none; border-top: 1px dashed #eee;'/>", unsafe_allow_html=True)
+    # 表頭
+    c1, c2 = st.columns(2)
+    with c1:
+        st.markdown("<div style='text-align:center; color:#94A3B8; font-size:0.8rem; letter-spacing:1px; margin-bottom:10px;'>ORIGINAL</div>", unsafe_allow_html=True)
+    with c2:
+        st.markdown("<div style='text-align:center; color:#94A3B8; font-size:0.8rem; letter-spacing:1px; margin-bottom:10px;'>TRANSLATION</div>", unsafe_allow_html=True)
+
+    # 歌詞循環
+    for i, (kr, zh) in enumerate(song['lyrics']):
+        # 隔行變色效果
+        bg_style = "background-color: #F8FAFC;" if i % 2 == 0 else "background-color: white;"
+        
+        st.markdown(f"""
+        <div style="{bg_style} padding: 15px; border-radius: 8px; margin-bottom: 4px;">
+            <div style="display: flex; gap: 20px; align-items: baseline;">
+                <div style="flex: 1; font-weight: 600; color: #334155; font-size: 1.05rem;">{kr}</div>
+                <div style="flex: 1; color: #64748B; font-size: 0.95rem;">{zh}</div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
     # 頁尾
-    st.caption("歌詞僅供學習交流使用 • TOMORROW X TOGETHER")
+    st.markdown("""
+    <div style='text-align: center; margin-top: 50px; padding: 20px; color: #CBD5E1; font-size: 0.8rem;'>
+        TXT MOA LIBRARY • ONE DREAM
+    </div>
+    """, unsafe_allow_html=True)
