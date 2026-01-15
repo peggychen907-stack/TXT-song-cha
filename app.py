@@ -84,8 +84,14 @@ SONGS = [
         'lyrics': [
             {'ko': '너와 함께할 미래는 vintage', 'ro': 'Neowa hamkkehal miraeneun vintage', 'zh': '與你共度的未來是 classic vintage'},
             {'ko': '오래될수록 소중해', 'ro': 'Oraedoelsurok sojunghae', 'zh': '越久越珍貴'},
+            {'ko': 'Yeah, you are my everything', 'ro': 'Yeah, you are my everything', 'zh': '是的，你是我的一切'},
+            {'ko': 'Hold me tight', 'ro': 'Hold me tight', 'zh': '緊緊抱住我'},
+            {'ko': '달빛이 차오르는 밤', 'ro': 'Dalbichi chaoreuneun bam', 'zh': '月光滿溢的夜晚'},
             {'ko': 'Over the moon', 'ro': 'Over the moon', 'zh': 'Over the moon'},
             {'ko': '내 세상은 너로 가득 차', 'ro': 'Nae sesangeun neoro gadeuk cha', 'zh': '我的世界充滿了你'},
+            {'ko': 'So let me love you', 'ro': 'So let me love you', 'zh': '所以讓我愛你'},
+            {'ko': 'You make me feel like', 'ro': 'You make me feel like', 'zh': '你讓我感覺像'},
+            {'ko': 'Over the moon', 'ro': 'Over the moon', 'zh': 'Over the moon'},
         ]
     },
     {'id': 'heaven', 'album_id': 'sanctuary', 'title': 'Heaven', 'korean_title': 'Heaven', 'lyrics': create_placeholder_lyrics()},
@@ -99,9 +105,14 @@ SONGS = [
         'id': 'deja_vu', 'album_id': 'tomorrow', 'title': 'Deja Vu', 'korean_title': 'Deja Vu',
         'lyrics': [
             {'ko': '폐허 속의 모르스부호', 'ro': 'Pyeheo sogui moreuseubuho', 'zh': '廢墟中的摩斯密碼'},
-            {'ko': '약속을 너만은 기억할 테니', 'ro': 'Yaksogeul neomaneun gieokhal teni', 'zh': '只有你會記得那個約定'},
+            {'ko': '머릿속을 맴도는 얼굴', 'ro': 'Meoritsogeul maemdoneun eolgul', 'zh': '腦海中盤旋的那張臉'},
+            {'ko': '나의 미래는 너야', 'ro': 'Naui miraeneun neoya', 'zh': '我的未來就是你'},
+            {'ko': 'Say my name', 'ro': 'Say my name', 'zh': '呼喚我的名字'},
             {'ko': '마치 데자뷔', 'ro': 'Machi dejabwi', 'zh': '就像既視感 (Deja Vu)'},
+            {'ko': '약속을 너만은 기억할 테니', 'ro': 'Yaksogeul neomaneun gieokhal teni', 'zh': '因為只有你會記得那個約定'},
             {'ko': 'I promise you', 'ro': 'I promise you', 'zh': '我向你保證'},
+            {'ko': '몇 번을 반복해도', 'ro': 'Myeot beoneul banbokhaedo', 'zh': '無論重複多少次'},
+            {'ko': '나의 미래는 너야', 'ro': 'Naui miraeneun neoya', 'zh': '我的未來就是你'},
         ]
     },
     {'id': 'ill_see_you', 'album_id': 'tomorrow', 'title': "I'll See You There Tomorrow", 'korean_title': '내일에서 기다릴게', 'lyrics': create_placeholder_lyrics()},
@@ -114,7 +125,12 @@ SONGS = [
         'lyrics': [
             {'ko': 'Heaven is hiding empty-handed', 'ro': 'Heaven is hiding empty-handed', 'zh': '天堂空手躲藏著'},
             {'ko': '탄 곳이 없는 shooting star', 'ro': 'Tan gosi eomneun shooting star', 'zh': '沒有燃燒殆盡的流星'},
-            {'ko': "I'm chasing that feeling", 'ro': "I'm chasing that feeling", 'zh': '我在追逐那種感覺'},
+            {'ko': '내일도 난 제자리야', 'ro': 'Naeildo nan jejariya', 'zh': '明天我也會在原地'},
+            {'ko': 'I\'m chasing that feeling', 'ro': 'I\'m chasing that feeling', 'zh': '我在追逐那種感覺'},
+            {'ko': '망가진 나라도 괜찮아', 'ro': 'Manggajin narado gwaenchana', 'zh': '即使壞掉的我也可以'},
+            {'ko': '죽어 가던 나의 아픔까지', 'ro': 'Jugeo gadeon naui apeumkkaji', 'zh': '連同我漸漸死去的痛苦'},
+            {'ko': '사랑할래 chasing that feeling', 'ro': 'Saranghallae chasing that feeling', 'zh': '我要去愛 chasing that feeling'},
+            {'ko': 'Chasing that feeling', 'ro': 'Chasing that feeling', 'zh': '追逐那種感覺'},
         ]
     },
     {'id': 'growing_pain', 'album_id': 'freefall', 'title': 'Growing Pain', 'korean_title': 'Growing Pain', 'lyrics': create_placeholder_lyrics()},
@@ -126,8 +142,14 @@ SONGS = [
     {
         'id': 'sugar_rush_ride', 'album_id': 'temptation', 'title': 'Sugar Rush Ride', 'korean_title': 'Sugar Rush Ride',
         'lyrics': [
+            {'ko': '생각은 멈춰', 'ro': 'Saenggageun meomchwo', 'zh': '停止思考'},
+            {'ko': '직감만 남겨', 'ro': 'Jikgamman namgyeo', 'zh': '只留下直覺'},
             {'ko': '거부할 수 없는 이 이끌림', 'ro': 'Geobuhal su eomneun i ikkeullim', 'zh': '這無法抗拒的吸引力'},
             {'ko': 'Gimme gimme more', 'ro': 'Gimme gimme more', 'zh': '給我更多 給我更多'},
+            {'ko': 'Sugar rush-ush', 'ro': 'Sugar rush-ush', 'zh': '糖分衝擊'},
+            {'ko': 'Sugar rush-ush', 'ro': 'Sugar rush-ush', 'zh': '糖分衝擊'},
+            {'ko': '나쁜 넌 liar', 'ro': 'Nappeun neon liar', 'zh': '壞壞的你是 liar'},
+            {'ko': '내게 너 뭘 한 거야', 'ro': 'Naege neo mwol han geoya', 'zh': '你對我做了什麼'},
             {'ko': 'Sugar rush-ush', 'ro': 'Sugar rush-ush', 'zh': '糖分衝擊'},
         ]
     },
@@ -141,7 +163,13 @@ SONGS = [
         'id': 'gbgb', 'album_id': 'thursday', 'title': 'Good Boy Gone Bad', 'korean_title': 'Good Boy Gone Bad',
         'lyrics': [
             {'ko': '영원이란 말은 모래성', 'ro': 'Yeongwoniran mareun moraeseong', 'zh': '永遠這個詞就像沙堡'},
+            {'ko': '부드러운 파도 앞에 무너져', 'ro': 'Budeureoun pado ape muneojyeo', 'zh': '在溫柔的海浪面前倒塌'},
             {'ko': 'Good boy gone bad', 'ro': 'Good boy gone bad', 'zh': '好男孩變壞了'},
+            {'ko': '다 내던져 난', 'ro': 'Da naedeonjyeo nan', 'zh': '我全部拋棄'},
+            {'ko': 'Good boy gone bad', 'ro': 'Good boy gone bad', 'zh': '好男孩變壞了'},
+            {'ko': '네가 했던 날', 'ro': 'Nega haetdeon nal', 'zh': '你曾愛過的我'},
+            {'ko': '가슴팍엔 흉터', 'ro': 'Gaseumpagen hyungteo', 'zh': '胸口的傷疤'},
+            {'ko': 'Gone dead', 'ro': 'Gone dead', 'zh': 'Gone dead'},
         ]
     },
     {'id': 'opening_sequence', 'album_id': 'thursday', 'title': 'Opening Sequence', 'korean_title': 'Opening Sequence', 'lyrics': create_placeholder_lyrics()},
@@ -156,6 +184,10 @@ SONGS = [
             {'ko': 'I\'m a loser', 'ro': 'I\'m a loser', 'zh': '我是個失敗者'},
             {'ko': 'I\'m a lover', 'ro': 'I\'m a lover', 'zh': '我是個愛人'},
             {'ko': 'Lover with a $ dollar sign', 'ro': 'Lover with a $ dollar sign', 'zh': '帶著金錢符號的愛人'},
+            {'ko': 'Is it a r-run or r-run?', 'ro': 'Is it a r-run or r-run?', 'zh': '是逃跑還是奔跑？'},
+            {'ko': '나를 구원해 준 너', 'ro': 'Nareul guwonhae jun neo', 'zh': '拯救了我的你'},
+            {'ko': '너와 함께라면 추락도 아름다워', 'ro': 'Neowa hamkkeramyeon churakdo areumdawo', 'zh': '只要和你在一起 墜落也美麗'},
+            {'ko': 'I\'m a loser', 'ro': 'I\'m a loser', 'zh': '我是個失敗者'},
         ]
     },
     {
@@ -163,6 +195,11 @@ SONGS = [
         'lyrics': [
             {'ko': 'I know I love you', 'ro': 'I know I love you', 'zh': '我知道我愛你'},
             {'ko': '이 제로의 세계 속', 'ro': 'I jeroui segye sok', 'zh': '在這個歸零的世界裡'},
+            {'ko': 'I know you’re my one and only', 'ro': 'I know you’re my one and only', 'zh': '我知道你是我的唯一'},
+            {'ko': '구멍 난 영혼에 살이 돋아', 'ro': 'Gumeong nan yeonghone sari doda', 'zh': '破洞的靈魂長出了新肉'},
+            {'ko': '얼어붙은 지구 위', 'ro': 'Eoreobuteun jigu wi', 'zh': '在冰凍的地球上'},
+            {'ko': 'Say you love me', 'ro': 'Say you love me', 'zh': '說你愛我'},
+            {'ko': '세상의 끝까지', 'ro': 'Sesangui kkeutkkaji', 'zh': '直到世界的盡頭'},
         ]
     },
     {'id': 'anti_romantic', 'album_id': 'freeze', 'title': 'Anti-Romantic', 'korean_title': 'Anti-Romantic', 'lyrics': create_placeholder_lyrics()},
@@ -175,9 +212,15 @@ SONGS = [
     {
         'id': 'blue_hour', 'album_id': 'blue_hour', 'title': 'Blue Hour', 'korean_title': '5시 53분의 하늘에서 발견한 너와 나',
         'lyrics': [
+            {'ko': '난 어색함이 너무 싫어', 'ro': 'Nan eosaekhami neomu sireo', 'zh': '我非常討厭尷尬'},
+            {'ko': '그냥 웃지 baby', 'ro': 'Geunyang utji baby', 'zh': '就笑一笑吧 baby'},
             {'ko': 'Cuz of imagination', 'ro': 'Cuz of imagination', 'zh': '因為想像力'},
             {'ko': '저 하늘의 오렌지빛 마법이', 'ro': 'Jeo haneurui orenjibit mabeobi', 'zh': '那天空中橙色的魔法'},
             {'ko': '끝이 나기 전에', 'ro': 'Kkeuchi nagi jeone', 'zh': '在結束之前'},
+            {'ko': 'Cuz of imagination', 'ro': 'Cuz of imagination', 'zh': '因為想像力'},
+            {'ko': '그 찰나에', 'ro': 'Geu challae', 'zh': '在那剎那'},
+            {'ko': 'Can you feel the rush', 'ro': 'Can you feel the rush', 'zh': 'Can you feel the rush'},
+            {'ko': 'Hour, woah woah', 'ro': 'Hour, woah woah', 'zh': 'Hour, woah woah'},
         ]
     },
     {'id': 'ghosting', 'album_id': 'blue_hour', 'title': 'Ghosting', 'korean_title': 'Ghosting', 'lyrics': create_placeholder_lyrics()},
@@ -189,8 +232,13 @@ SONGS = [
     {
         'id': 'cant_you_see_me', 'album_id': 'eternity', 'title': "Can't You See Me?", 'korean_title': '세계가 불타버린 밤, 우린...',
         'lyrics': [
+            {'ko': '마법은 끝났어', 'ro': 'Mabeobeun kkeunnasseo', 'zh': '魔法結束了'},
             {'ko': 'Can\'t you see me?', 'ro': 'Can\'t you see me?', 'zh': '你看不見我嗎？'},
+            {'ko': '마법진은 무너지고', 'ro': 'Mabeopjineun muneojigo', 'zh': '魔法陣崩塌了'},
             {'ko': '구해줘', 'ro': 'Guhaejwo', 'zh': '救救我'},
+            {'ko': 'Can\'t you see me?', 'ro': 'Can\'t you see me?', 'zh': '你看不見我嗎？'},
+            {'ko': 'Friends don\'t understand me', 'ro': 'Friends don\'t understand me', 'zh': '朋友們不理解我'},
+            {'ko': 'Bad bad', 'ro': 'Bad bad', 'zh': 'Bad bad'},
         ]
     },
     {'id': 'drama', 'album_id': 'eternity', 'title': 'Drama', 'korean_title': 'Drama', 'lyrics': create_placeholder_lyrics()},
@@ -203,8 +251,13 @@ SONGS = [
     {
         'id': 'run_away', 'album_id': 'magic', 'title': 'Run Away', 'korean_title': '9와 4분의 3 승강장에서 너를 기다려',
         'lyrics': [
+            {'ko': '나만 빼고 다 행복한 것만 같아', 'ro': 'Naman ppaego da haengbokhan geonman gata', 'zh': '好像除了我以外大家都很幸福'},
+            {'ko': '우는 것보다 웃을 때가 더 아파', 'ro': 'Uneun geotboda useul ttaega deo apa', 'zh': '比起哭泣，笑的時候更痛苦'},
+            {'ko': '마법의 주문이 널 위로할지도 몰라', 'ro': 'Mabeobui jumuni neol wirohaljido molla', 'zh': '魔法咒語說不定能安慰你'},
             {'ko': '도망갈까', 'ro': 'Domanggalkka', 'zh': '要逃跑嗎'},
             {'ko': 'Bibbidi babbidi boo', 'ro': 'Bibbidi babbidi boo', 'zh': 'Bibbidi babbidi boo'},
+            {'ko': '우리 함께라면', 'ro': 'Uri hamkkeramyeon', 'zh': '如果是我們一起的話'},
+            {'ko': '숨겨진 9와 4분의 3에', 'ro': 'Sumgyeojin guwa sabunui same', 'zh': '在隱藏的 9 又 3/4 月台'},
         ]
     },
     {'id': 'new_rules', 'album_id': 'magic', 'title': 'New Rules', 'korean_title': 'New Rules', 'lyrics': create_placeholder_lyrics()},
@@ -217,9 +270,14 @@ SONGS = [
     {
         'id': 'crown', 'album_id': 'star', 'title': 'CROWN', 'korean_title': '어느날 머리에서 뿔이 자랐다',
         'lyrics': [
+            {'ko': '거울 속에서 나를 멍하니 보는 넌', 'ro': 'Geoul sogeseo nareul meonghani boneun neon', 'zh': '鏡子裡呆呆看著我的你'},
+            {'ko': '내가 아냐', 'ro': 'Naega anya', 'zh': '不是我'},
             {'ko': '머리에 뿔이 솟아', 'ro': 'Meorie ppuri sosa', 'zh': '頭上長出了角'},
+            {'ko': '어떡해', 'ro': 'Eotteokhae', 'zh': '怎麼辦'},
+            {'ko': '이 뿔이 너를 부르는 내 신호가 될 테니', 'ro': 'I ppuri neoreul bureuneun nae sinhoga doel teni', 'zh': '這隻角會成為呼喚你的信號'},
             {'ko': 'But I love it', 'ro': 'But I love it', 'zh': '但我喜歡它'},
             {'ko': '넌 내 왕관이 돼', 'ro': 'Neon nae wanggwani dwae', 'zh': '你變成了我的皇冠'},
+            {'ko': '두근두근두근', 'ro': 'Dugeundugeundugeun', 'zh': '撲通撲通撲通'},
         ]
     },
     {'id': 'blue_orangeade', 'album_id': 'star', 'title': 'Blue Orangeade', 'korean_title': 'Blue Orangeade', 'lyrics': create_placeholder_lyrics()},
