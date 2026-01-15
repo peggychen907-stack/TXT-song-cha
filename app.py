@@ -10,73 +10,29 @@ st.set_page_config(
 
 # --- 資料庫 (Data) ---
 
-# 1. 專輯資訊 (按發行時間倒序排列)
+# 1. 專輯資訊
 ALBUMS = {
-    'sanctuary': {
-        'title': 'The Star Chapter: SANCTUARY',
-        'year': '2024',
-        'color': '#A5B4FC' # Indigo-300
-    },
-    'tomorrow': {
-        'title': 'minisode 3: TOMORROW',
-        'year': '2024',
-        'color': '#FDBA74' # Orange-300
-    },
-    'freefall': {
-        'title': 'The Name Chapter: FREEFALL',
-        'year': '2023',
-        'color': '#818CF8' # Indigo
-    },
-    'temptation': {
-        'title': 'The Name Chapter: TEMPTATION',
-        'year': '2023',
-        'color': '#34D399' # Emerald
-    },
-    'thursday': {
-        'title': "minisode 2: Thursday's Child",
-        'year': '2022',
-        'color': '#F87171' # Red
-    },
-    'fight_escape': {
-        'title': 'The Chaos Chapter: FIGHT OR ESCAPE',
-        'year': '2021',
-        'color': '#10B981' # Green (Repackage)
-    },
-    'freeze': {
-        'title': 'The Chaos Chapter: FREEZE',
-        'year': '2021',
-        'color': '#60A5FA' # Blue
-    },
-    'blue_hour': {
-        'title': 'minisode1 : Blue Hour',
-        'year': '2020',
-        'color': '#F472B6' # Pink
-    },
-    'eternity': {
-        'title': 'The Dream Chapter: ETERNITY',
-        'year': '2020',
-        'color': '#A78BFA' # Purple
-    },
-    'magic': {
-        'title': 'The Dream Chapter: MAGIC',
-        'year': '2019',
-        'color': '#2DD4BF' # Teal
-    },
-    'star': {
-        'title': 'The Dream Chapter: STAR',
-        'year': '2019',
-        'color': '#FCD34D' # Yellow
-    }
+    'sanctuary': { 'title': 'The Star Chapter: SANCTUARY', 'year': '2024', 'color': '#A5B4FC' },
+    'tomorrow': { 'title': 'minisode 3: TOMORROW', 'year': '2024', 'color': '#FDBA74' },
+    'freefall': { 'title': 'The Name Chapter: FREEFALL', 'year': '2023', 'color': '#818CF8' },
+    'temptation': { 'title': 'The Name Chapter: TEMPTATION', 'year': '2023', 'color': '#34D399' },
+    'thursday': { 'title': "minisode 2: Thursday's Child", 'year': '2022', 'color': '#F87171' },
+    'fight_escape': { 'title': 'The Chaos Chapter: FIGHT OR ESCAPE', 'year': '2021', 'color': '#10B981' },
+    'freeze': { 'title': 'The Chaos Chapter: FREEZE', 'year': '2021', 'color': '#60A5FA' },
+    'blue_hour': { 'title': 'minisode1 : Blue Hour', 'year': '2020', 'color': '#F472B6' },
+    'eternity': { 'title': 'The Dream Chapter: ETERNITY', 'year': '2020', 'color': '#A78BFA' },
+    'magic': { 'title': 'The Dream Chapter: MAGIC', 'year': '2019', 'color': '#2DD4BF' },
+    'star': { 'title': 'The Dream Chapter: STAR', 'year': '2019', 'color': '#FCD34D' }
 }
 
-# 輔助函式：建立歌詞範本 (用於 B-side 歌曲)
+# 輔助函式：建立 B-side 歌曲範本
 def create_placeholder_lyrics():
     return [
         {'ko': '가사가 준비 중입니다.', 'ro': 'Gasaga junbi jungimnida.', 'zh': '(歌詞資料庫擴充中...)'},
-        {'ko': 'MOA 여러분이 좋아하는 가사를 채워보세요!', 'ro': 'MOA yeoreobuni joahaneun gasareul chaewoboseyo!', 'zh': '請期待完整歌詞更新！'},
+        {'ko': '곧 업데이트 될 예정입니다.', 'ro': 'Got eopdeiteu doel yejeongimnida.', 'zh': '即將更新完整歌詞'},
     ]
 
-# 2. 歌曲資料庫 (包含主打歌歌詞與 B-side 曲目)
+# 2. 歌曲資料庫 (主打歌全歌詞 + B-side 列表)
 SONGS = [
     # --- The Star Chapter: SANCTUARY ---
     {
@@ -87,37 +43,34 @@ SONGS = [
             {'ko': 'Yeah, you are my everything', 'ro': 'Yeah, you are my everything', 'zh': '是的，你是我的一切'},
             {'ko': 'Hold me tight', 'ro': 'Hold me tight', 'zh': '緊緊抱住我'},
             {'ko': '달빛이 차오르는 밤', 'ro': 'Dalbichi chaoreuneun bam', 'zh': '月光滿溢的夜晚'},
-            {'ko': 'Over the moon', 'ro': 'Over the moon', 'zh': 'Over the moon'},
             {'ko': '내 세상은 너로 가득 차', 'ro': 'Nae sesangeun neoro gadeuk cha', 'zh': '我的世界充滿了你'},
             {'ko': 'So let me love you', 'ro': 'So let me love you', 'zh': '所以讓我愛你'},
-            {'ko': 'You make me feel like', 'ro': 'You make me feel like', 'zh': '你讓我感覺像'},
             {'ko': 'Over the moon', 'ro': 'Over the moon', 'zh': 'Over the moon'},
+            {'ko': '반짝이는 우리 둘만의 frame', 'ro': 'Banjjagineun uri dulmanui frame', 'zh': '閃耀著只屬於我們兩人的 frame'},
+            {'ko': '영원히 널 사랑해', 'ro': 'Yeongwonhi neol saranghae', 'zh': '永遠愛你'},
         ]
     },
     {'id': 'heaven', 'album_id': 'sanctuary', 'title': 'Heaven', 'korean_title': 'Heaven', 'lyrics': create_placeholder_lyrics()},
     {'id': 'danger', 'album_id': 'sanctuary', 'title': 'Danger', 'korean_title': 'Danger', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'resist', 'album_id': 'sanctuary', 'title': 'Resist (Not Gonna Run Away)', 'korean_title': 'Resist', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'forty_one', 'album_id': 'sanctuary', 'title': 'Forty One Winks', 'korean_title': 'Forty One Winks', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'higher', 'album_id': 'sanctuary', 'title': 'Higher Than Heaven', 'korean_title': 'Higher Than Heaven', 'lyrics': create_placeholder_lyrics()},
-
+    
     # --- minisode 3: TOMORROW ---
     {
         'id': 'deja_vu', 'album_id': 'tomorrow', 'title': 'Deja Vu', 'korean_title': 'Deja Vu',
         'lyrics': [
             {'ko': '폐허 속의 모르스부호', 'ro': 'Pyeheo sogui moreuseubuho', 'zh': '廢墟中的摩斯密碼'},
             {'ko': '머릿속을 맴도는 얼굴', 'ro': 'Meoritsogeul maemdoneun eolgul', 'zh': '腦海中盤旋的那張臉'},
+            {'ko': '약속을 너만은 기억할 테니', 'ro': 'Yaksogeul neomaneun gieokhal teni', 'zh': '因為只有你會記得那個約定'},
             {'ko': '나의 미래는 너야', 'ro': 'Naui miraeneun neoya', 'zh': '我的未來就是你'},
             {'ko': 'Say my name', 'ro': 'Say my name', 'zh': '呼喚我的名字'},
             {'ko': '마치 데자뷔', 'ro': 'Machi dejabwi', 'zh': '就像既視感 (Deja Vu)'},
-            {'ko': '약속을 너만은 기억할 테니', 'ro': 'Yaksogeul neomaneun gieokhal teni', 'zh': '因為只有你會記得那個約定'},
+            {'ko': '도망쳐 봐도 결국엔 너야', 'ro': 'Domangchyeo bwado gyeolgugen neoya', 'zh': '就算逃跑 結局依然是你'},
+            {'ko': '비극의 오르페우스', 'ro': 'Bigeugui oreupeuseu', 'zh': '悲劇的奧菲斯'},
             {'ko': 'I promise you', 'ro': 'I promise you', 'zh': '我向你保證'},
             {'ko': '몇 번을 반복해도', 'ro': 'Myeot beoneul banbokhaedo', 'zh': '無論重複多少次'},
             {'ko': '나의 미래는 너야', 'ro': 'Naui miraeneun neoya', 'zh': '我的未來就是你'},
         ]
     },
     {'id': 'ill_see_you', 'album_id': 'tomorrow', 'title': "I'll See You There Tomorrow", 'korean_title': '내일에서 기다릴게', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'miracle', 'album_id': 'tomorrow', 'title': 'Miracle', 'korean_title': '기적은 너와 내가 함께하는 순간마다 일어나고 있어', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'quarter_life', 'album_id': 'tomorrow', 'title': 'Quarter Life', 'korean_title': 'Quarter Life', 'lyrics': create_placeholder_lyrics()},
 
     # --- The Name Chapter: FREEFALL ---
     {
@@ -126,17 +79,16 @@ SONGS = [
             {'ko': 'Heaven is hiding empty-handed', 'ro': 'Heaven is hiding empty-handed', 'zh': '天堂空手躲藏著'},
             {'ko': '탄 곳이 없는 shooting star', 'ro': 'Tan gosi eomneun shooting star', 'zh': '沒有燃燒殆盡的流星'},
             {'ko': '내일도 난 제자리야', 'ro': 'Naeildo nan jejariya', 'zh': '明天我也會在原地'},
+            {'ko': '달콤한 신기루는 굿바이', 'ro': 'Dalkomhan singiruneun gutbai', 'zh': '與甜蜜的海市蜃樓說再見'},
             {'ko': 'I\'m chasing that feeling', 'ro': 'I\'m chasing that feeling', 'zh': '我在追逐那種感覺'},
             {'ko': '망가진 나라도 괜찮아', 'ro': 'Manggajin narado gwaenchana', 'zh': '即使壞掉的我也可以'},
             {'ko': '죽어 가던 나의 아픔까지', 'ro': 'Jugeo gadeon naui apeumkkaji', 'zh': '連同我漸漸死去的痛苦'},
             {'ko': '사랑할래 chasing that feeling', 'ro': 'Saranghallae chasing that feeling', 'zh': '我要去愛 chasing that feeling'},
+            {'ko': 'And I won\'t stop', 'ro': 'And I won\'t stop', 'zh': '我不會停止'},
             {'ko': 'Chasing that feeling', 'ro': 'Chasing that feeling', 'zh': '追逐那種感覺'},
         ]
     },
-    {'id': 'growing_pain', 'album_id': 'freefall', 'title': 'Growing Pain', 'korean_title': 'Growing Pain', 'lyrics': create_placeholder_lyrics()},
     {'id': 'back_for_more', 'album_id': 'freefall', 'title': 'Back for More (TXT Ver.)', 'korean_title': 'Back for More', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'dreamer', 'album_id': 'freefall', 'title': 'Dreamer', 'korean_title': 'Dreamer', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'happily_ever_after', 'album_id': 'freefall', 'title': 'Happily Ever After', 'korean_title': 'Happily Ever After', 'lyrics': create_placeholder_lyrics()},
 
     # --- The Name Chapter: TEMPTATION ---
     {
@@ -145,18 +97,18 @@ SONGS = [
             {'ko': '생각은 멈춰', 'ro': 'Saenggageun meomchwo', 'zh': '停止思考'},
             {'ko': '직감만 남겨', 'ro': 'Jikgamman namgyeo', 'zh': '只留下直覺'},
             {'ko': '거부할 수 없는 이 이끌림', 'ro': 'Geobuhal su eomneun i ikkeullim', 'zh': '這無法抗拒的吸引力'},
+            {'ko': '달콤함 그 틈으로 데려가', 'ro': 'Dalkomham geu teumeuro deryeoga', 'zh': '帶我到那甜蜜的縫隙中'},
+            {'ko': 'Gimme gimme more', 'ro': 'Gimme gimme more', 'zh': '給我更多 給我更多'},
             {'ko': 'Gimme gimme more', 'ro': 'Gimme gimme more', 'zh': '給我更多 給我更多'},
             {'ko': 'Sugar rush-ush', 'ro': 'Sugar rush-ush', 'zh': '糖分衝擊'},
             {'ko': 'Sugar rush-ush', 'ro': 'Sugar rush-ush', 'zh': '糖分衝擊'},
             {'ko': '나쁜 넌 liar', 'ro': 'Nappeun neon liar', 'zh': '壞壞的你是 liar'},
             {'ko': '내게 너 뭘 한 거야', 'ro': 'Naege neo mwol han geoya', 'zh': '你對我做了什麼'},
+            {'ko': 'Come a little closer', 'ro': 'Come a little closer', 'zh': '再靠近一點'},
+            {'ko': '넌 속삭여 "삼켜버려"', 'ro': 'Neon soksagyeo "samkyeobeoryeo"', 'zh': '你低語著「吞下去吧」'},
             {'ko': 'Sugar rush-ush', 'ro': 'Sugar rush-ush', 'zh': '糖分衝擊'},
         ]
     },
-    {'id': 'devil_by_window', 'album_id': 'temptation', 'title': 'Devil by the Window', 'korean_title': 'Devil by the Window', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'happy_fools', 'album_id': 'temptation', 'title': 'Happy Fools (feat. Coi Leray)', 'korean_title': 'Happy Fools', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'tinnitus', 'album_id': 'temptation', 'title': 'Tinnitus (Wanna be a rock)', 'korean_title': '돌멩이가 되고 싶어', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'farewell_neverland', 'album_id': 'temptation', 'title': 'Farewell, Neverland', 'korean_title': '네버랜드를 떠나며', 'lyrics': create_placeholder_lyrics()},
 
     # --- minisode 2: Thursday's Child ---
     {
@@ -164,18 +116,18 @@ SONGS = [
         'lyrics': [
             {'ko': '영원이란 말은 모래성', 'ro': 'Yeongwoniran mareun moraeseong', 'zh': '永遠這個詞就像沙堡'},
             {'ko': '부드러운 파도 앞에 무너져', 'ro': 'Budeureoun pado ape muneojyeo', 'zh': '在溫柔的海浪面前倒塌'},
+            {'ko': 'Every day, every night', 'ro': 'Every day, every night', 'zh': '日日夜夜'},
+            {'ko': '사랑이란 놈의 지독한 장난', 'ro': 'Sarangiran nomui jidokhan jangnan', 'zh': '愛情這傢伙的殘忍惡作劇'},
             {'ko': 'Good boy gone bad', 'ro': 'Good boy gone bad', 'zh': '好男孩變壞了'},
             {'ko': '다 내던져 난', 'ro': 'Da naedeonjyeo nan', 'zh': '我全部拋棄'},
             {'ko': 'Good boy gone bad', 'ro': 'Good boy gone bad', 'zh': '好男孩變壞了'},
             {'ko': '네가 했던 날', 'ro': 'Nega haetdeon nal', 'zh': '你曾愛過的我'},
             {'ko': '가슴팍엔 흉터', 'ro': 'Gaseumpagen hyungteo', 'zh': '胸口的傷疤'},
             {'ko': 'Gone dead', 'ro': 'Gone dead', 'zh': 'Gone dead'},
+            {'ko': '난 날 쐈어 bang bang', 'ro': 'Nan nal swasseo bang bang', 'zh': '我對自己開了槍 bang bang'},
+            {'ko': '더 삐뚤어져 난', 'ro': 'Deo ppittureojyeo nan', 'zh': '我變得更加扭曲'},
         ]
     },
-    {'id': 'opening_sequence', 'album_id': 'thursday', 'title': 'Opening Sequence', 'korean_title': 'Opening Sequence', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'trust_fund_baby', 'album_id': 'thursday', 'title': 'Trust Fund Baby', 'korean_title': 'Trust Fund Baby', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'lonely_boy', 'album_id': 'thursday', 'title': 'Lonely Boy', 'korean_title': '네 번째 손가락 위 타투', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'thursday_child', 'album_id': 'thursday', 'title': "Thursday's Child Has Far To Go", 'korean_title': 'Thursday\'s Child Has Far To Go', 'lyrics': create_placeholder_lyrics()},
 
     # --- The Chaos Chapter: FIGHT OR ESCAPE & FREEZE ---
     {
@@ -187,7 +139,12 @@ SONGS = [
             {'ko': 'Is it a r-run or r-run?', 'ro': 'Is it a r-run or r-run?', 'zh': '是逃跑還是奔跑？'},
             {'ko': '나를 구원해 준 너', 'ro': 'Nareul guwonhae jun neo', 'zh': '拯救了我的你'},
             {'ko': '너와 함께라면 추락도 아름다워', 'ro': 'Neowa hamkkeramyeon churakdo areumdawo', 'zh': '只要和你在一起 墜落也美麗'},
+            {'ko': '기꺼이 sinking', 'ro': 'Gikkeoi sinking', 'zh': '心甘情願 sinking'},
+            {'ko': '너를 그리는 shining', 'ro': 'Neoreul geurineun shining', 'zh': '描繪著你的 shining'},
             {'ko': 'I\'m a loser', 'ro': 'I\'m a loser', 'zh': '我是個失敗者'},
+            {'ko': 'Crying, crying, crying', 'ro': 'Crying, crying, crying', 'zh': 'Crying, crying, crying'},
+            {'ko': '이젠 널 잊겠단 lie', 'ro': 'Ijen neol itgetdan lie', 'zh': '現在說要忘記你是 lie'},
+            {'ko': 'Run, run, run', 'ro': 'Run, run, run', 'zh': 'Run, run, run'},
         ]
     },
     {
@@ -209,8 +166,6 @@ SONGS = [
             {'ko': '내 손을 잡아줘', 'ro': 'Nae soneul jabajwo', 'zh': '請抓住我的手'},
             {'ko': 'Please use me like a drug', 'ro': 'Please use me like a drug', 'zh': 'Please use me like a drug'},
             {'ko': 'I know I love you', 'ro': 'I know I love you', 'zh': '我知道我愛你'},
-            {'ko': '이 제로의 세계 속', 'ro': 'I jeroui segye sok', 'zh': '在這個歸零的世界裡'},
-            {'ko': 'I know you’re my one and only', 'ro': 'I know you’re my one and only', 'zh': '我知道你是我的唯一'},
             {'ko': '구멍 난 영혼에 살이 돋아', 'ro': 'Gumeong nan yeonghone sari doda', 'zh': '破洞的靈魂長出了新肉'},
             {'ko': '얼어붙은 지구 위', 'ro': 'Eoreobuteun jigu wi', 'zh': '在冰凍的地球上'},
             {'ko': 'Say you love me', 'ro': 'Say you love me', 'zh': '說你愛我'},
@@ -218,17 +173,8 @@ SONGS = [
             {'ko': 'All or nothing', 'ro': 'All or nothing', 'zh': 'All or nothing'},
             {'ko': 'I give it all to you', 'ro': 'I give it all to you', 'zh': '我把一切都給你'},
             {'ko': 'I know I love you', 'ro': 'I know I love you', 'zh': '我知道我愛你'},
-            {'ko': 'Say you love me', 'ro': 'Say you love me', 'zh': '說你愛我'},
-            {'ko': '세상의 끝까지', 'ro': 'Sesangui kkeutkkaji', 'zh': '直到世界的盡頭'},
-            {'ko': 'All or nothing', 'ro': 'All or nothing', 'zh': 'All or nothing'},
-            {'ko': 'I give it all to you', 'ro': 'I give it all to you', 'zh': '我把一切都給你'},
         ]
     },
-    {'id': 'anti_romantic', 'album_id': 'freeze', 'title': 'Anti-Romantic', 'korean_title': 'Anti-Romantic', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'magic_freeze', 'album_id': 'freeze', 'title': 'Magic', 'korean_title': 'Magic', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'ice_cream', 'album_id': 'freeze', 'title': 'Ice Cream', 'korean_title': '소악행', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'balance_game', 'album_id': 'freeze', 'title': 'Balance Game', 'korean_title': '밸런스 게임', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'frost', 'album_id': 'freeze', 'title': 'Frost', 'korean_title': 'Frost', 'lyrics': create_placeholder_lyrics()},
 
     # --- minisode1 : Blue Hour ---
     {
@@ -243,12 +189,15 @@ SONGS = [
             {'ko': '그 찰나에', 'ro': 'Geu challae', 'zh': '在那剎那'},
             {'ko': 'Can you feel the rush', 'ro': 'Can you feel the rush', 'zh': 'Can you feel the rush'},
             {'ko': 'Hour, woah woah', 'ro': 'Hour, woah woah', 'zh': 'Hour, woah woah'},
+            {'ko': '너는 나의 special', 'ro': 'Neoneun naui special', 'zh': '你是我的 special'},
+            {'ko': '하나뿐인 내 special', 'ro': 'Hanappunin nae special', 'zh': '唯一的我的 special'},
+            {'ko': '꿈의 문이 열리고', 'ro': 'Kkumui muni yeolligo', 'zh': '夢想之門開啟'},
+            {'ko': '추억 속의 널 부르고', 'ro': 'Chueok sogui neol bureugo', 'zh': '呼喚記憶中的你'},
+            {'ko': '멈춰버린 시간', 'ro': 'Meomchwobeorin sigan', 'zh': '停滯的時間'},
+            {'ko': '경계선 그 사이로', 'ro': 'Gyeonggyeseon geu sairo', 'zh': '在分界線之間'},
+            {'ko': '돌아서고 싶지 않아', 'ro': 'Doraseogo sipji ana', 'zh': '不想轉身離去'},
         ]
     },
-    {'id': 'ghosting', 'album_id': 'blue_hour', 'title': 'Ghosting', 'korean_title': 'Ghosting', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'wishlist', 'album_id': 'blue_hour', 'title': 'Wishlist', 'korean_title': 'Wishlist', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'we_lost_summer', 'album_id': 'blue_hour', 'title': 'We Lost The Summer', 'korean_title': '날씨를 잃어버렸어', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'way_home', 'album_id': 'blue_hour', 'title': 'Way Home', 'korean_title': '하굣길', 'lyrics': create_placeholder_lyrics()},
 
     # --- The Dream Chapter: ETERNITY ---
     {
@@ -261,13 +210,15 @@ SONGS = [
             {'ko': 'Can\'t you see me?', 'ro': 'Can\'t you see me?', 'zh': '你看不見我嗎？'},
             {'ko': 'Friends don\'t understand me', 'ro': 'Friends don\'t understand me', 'zh': '朋友們不理解我'},
             {'ko': 'Bad bad', 'ro': 'Bad bad', 'zh': 'Bad bad'},
+            {'ko': '내 영원의 약속은', 'ro': 'Nae yeongwonui yaksogeun', 'zh': '我永遠的約定'},
+            {'ko': '모래성처럼 무너져', 'ro': 'Moraeseongcheoreom muneojyeo', 'zh': '像沙堡一樣崩塌'},
+            {'ko': 'Who\'s a liar', 'ro': 'Who\'s a liar', 'zh': 'Who\'s a liar'},
+            {'ko': '불타버린 밤', 'ro': 'Bultabeorin bam', 'zh': '燃燒殆盡的夜晚'},
+            {'ko': 'Together, together', 'ro': 'Together, together', 'zh': 'Together, together'},
+            {'ko': 'We are forever, forever', 'ro': 'We are forever, forever', 'zh': 'We are forever, forever'},
+            {'ko': 'You know', 'ro': 'You know', 'zh': 'You know'},
         ]
     },
-    {'id': 'drama', 'album_id': 'eternity', 'title': 'Drama', 'korean_title': 'Drama', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'shampoo_fairy', 'album_id': 'eternity', 'title': 'Fairy of Shampoo', 'korean_title': '샴푸의 요정', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'maze_in_mirror', 'album_id': 'eternity', 'title': 'Maze in the Mirror', 'korean_title': '거울 속의 미로', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'puma', 'album_id': 'eternity', 'title': 'PUMA', 'korean_title': '동물원을 빠져나온 퓨마', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'eternally', 'album_id': 'eternity', 'title': 'Eternally', 'korean_title': 'Eternally', 'lyrics': create_placeholder_lyrics()},
 
     # --- The Dream Chapter: MAGIC ---
     {
@@ -280,13 +231,14 @@ SONGS = [
             {'ko': 'Bibbidi babbidi boo', 'ro': 'Bibbidi babbidi boo', 'zh': 'Bibbidi babbidi boo'},
             {'ko': '우리 함께라면', 'ro': 'Uri hamkkeramyeon', 'zh': '如果是我們一起的話'},
             {'ko': '숨겨진 9와 4분의 3에', 'ro': 'Sumgyeojin guwa sabunui same', 'zh': '在隱藏的 9 又 3/4 月台'},
+            {'ko': '함께해줘', 'ro': 'Hamkkehaejwo', 'zh': '請跟我在一起'},
+            {'ko': '캄캄한 밤의 계단', 'ro': 'Kamkamhan bamui gyedan', 'zh': '漆黑夜晚的樓梯'},
+            {'ko': '마법의 기차를 타', 'ro': 'Mabeobui gichareul ta', 'zh': '搭上魔法列車'},
+            {'ko': '내 영원이 돼줘', 'ro': 'Nae yeongwoni dwaejwo', 'zh': '成為我的永遠吧'},
+            {'ko': '내 이름을 불러줘', 'ro': 'Nae ireumeul bulleojwo', 'zh': '請呼喚我的名字'},
+            {'ko': 'Run away, run away', 'ro': 'Run away, run away', 'zh': 'Run away, run away'},
         ]
     },
-    {'id': 'new_rules', 'album_id': 'magic', 'title': 'New Rules', 'korean_title': 'New Rules', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'roller_coaster', 'album_id': 'magic', 'title': 'Roller Coaster', 'korean_title': '간지러워', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'poppin_star', 'album_id': 'magic', 'title': 'Poppin\' Star', 'korean_title': 'Poppin\' Star', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'magic_island', 'album_id': 'magic', 'title': 'Magic Island', 'korean_title': 'Magic Island', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'angel_or_devil', 'album_id': 'magic', 'title': 'Angel Or Devil', 'korean_title': 'Angel Or Devil', 'lyrics': create_placeholder_lyrics()},
 
     # --- The Dream Chapter: STAR ---
     {
@@ -300,12 +252,14 @@ SONGS = [
             {'ko': 'But I love it', 'ro': 'But I love it', 'zh': '但我喜歡它'},
             {'ko': '넌 내 왕관이 돼', 'ro': 'Neon nae wanggwani dwae', 'zh': '你變成了我的皇冠'},
             {'ko': '두근두근두근', 'ro': 'Dugeundugeundugeun', 'zh': '撲通撲通撲通'},
+            {'ko': '세상은 대체 왜 이래', 'ro': 'Sesangeun daeche wae irae', 'zh': '這世界到底是怎麼了'},
+            {'ko': '구해줘', 'ro': 'Guhaejwo', 'zh': '救救我'},
+            {'ko': '사실은 아직도 난', 'ro': 'Sasireun ajikdo nan', 'zh': '其實我依然'},
+            {'ko': '조금 불안해', 'ro': 'Jogeum buranhae', 'zh': '有點不安'},
+            {'ko': 'Who you?', 'ro': 'Who you?', 'zh': 'Who you?'},
+            {'ko': 'I\'m a boy with a horn', 'ro': 'I\'m a boy with a horn', 'zh': '我是個長著角的男孩'},
         ]
     },
-    {'id': 'blue_orangeade', 'album_id': 'star', 'title': 'Blue Orangeade', 'korean_title': 'Blue Orangeade', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'our_summer', 'album_id': 'star', 'title': 'Our Summer', 'korean_title': 'Our Summer', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'cat_dog', 'album_id': 'star', 'title': 'Cat & Dog', 'korean_title': 'Cat & Dog', 'lyrics': create_placeholder_lyrics()},
-    {'id': 'nap_star', 'album_id': 'star', 'title': 'Nap of a star', 'korean_title': '별의 낮잠', 'lyrics': create_placeholder_lyrics()},
 ]
 
 # --- 狀態管理 (Session State) ---
@@ -357,12 +311,6 @@ st.markdown("""
     .korean-text { font-size: 1.3rem; font-weight: bold; margin-bottom: 4px; color: #1F2937; }
     .roman-text { font-size: 0.95rem; color: #6B7280; font-style: italic; margin-bottom: 4px; }
     .chinese-text { font-size: 1.0rem; color: #4F46E5; margin-bottom: 15px; font-weight: 500; }
-    .song-list-item {
-        padding: 10px;
-        border-radius: 8px;
-        margin-bottom: 8px;
-        border: 1px solid #f0f0f0;
-    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -428,7 +376,7 @@ elif st.session_state.page == 'lyrics' and st.session_state.selected_song:
         if st.button("← 返回列表"):
             go_to_home()
     
-    # 專輯封面與標題區 (模擬)
+    # 專輯封面與標題區
     st.markdown(f"""
     <div style="text-align: center; padding: 20px; background: linear-gradient(to bottom, {album['color']}22, white); border-radius: 20px;">
         <h1 style='margin-bottom: 0;'>{song['title']}</h1>
@@ -437,7 +385,7 @@ elif st.session_state.page == 'lyrics' and st.session_state.selected_song:
     </div>
     """, unsafe_allow_html=True)
     
-    st.write("") # Spacer
+    st.write("") 
 
     # 控制按鈕 (收藏)
     c1, c2, c3 = st.columns([1, 2, 1])
@@ -468,21 +416,17 @@ elif st.session_state.page == 'lyrics' and st.session_state.selected_song:
         if show_zh:
             st.markdown(f"<div class='chinese-text'>{line['zh']}</div>", unsafe_allow_html=True)
         
-        st.write("") # 空行間隔
+        st.write("") 
     
     if song['lyrics'][0]['ko'] == '가사가 준비 중입니다.':
-        st.info("💡 提示：此為 B-side 歌曲範本，您可以在程式碼的 SONGS 列表中填入完整歌詞。")
+        st.info("💡 提示：非主打歌(B-side) 的完整歌詞將陸續更新，目前僅提供主打歌全曲。")
 
 # 3. 首頁 (專輯牆與列表)
 else:
     st.title("Hello, MOA! ✨")
     st.write("請選擇專輯瀏覽歌曲：")
     
-    # 取得所有專輯 ID
     album_ids = list(ALBUMS.keys())
-    
-    # 建立 Tabs (因專輯較多，使用 Tabs 分類顯示可能太擠，這裡改用 Selectbox 或 Expander，或者直接用 Tabs 但要注意數量)
-    # 為了美觀，我們將專輯分為「最新發行」和「經典系列」
     
     tab_new, tab_all = st.tabs(["最新發行 (Latest)", "所有專輯 (All Albums)"])
     
@@ -492,13 +436,9 @@ else:
         for aid in latest_albums:
             album = ALBUMS[aid]
             with st.expander(f"{album['year']} | {album['title']}", expanded=True):
-                st.markdown(
-                    f"""<div style="height: 5px; background: {album['color']}; border-radius: 5px; margin-bottom: 10px;"></div>""", 
-                    unsafe_allow_html=True
-                )
+                st.markdown(f"""<div style="height: 5px; background: {album['color']}; border-radius: 5px; margin-bottom: 10px;"></div>""", unsafe_allow_html=True)
                 album_songs = [s for s in SONGS if s['album_id'] == aid]
                 for song in album_songs:
-                     # 簡單列表
                     if st.button(f"🎵 {song['title']}", key=f"new_{song['id']}"):
                         go_to_song(song)
                         st.rerun()
@@ -509,15 +449,12 @@ else:
         
         if selected_album_id:
             album = ALBUMS[selected_album_id]
-            st.markdown(
-                f"""
+            st.markdown(f"""
                 <div class="album-card" style="background: linear-gradient(135deg, {album['color']}, #888);">
                     <h2>{album['title']}</h2>
                     <p>{album['year']}</p>
                 </div>
-                """, 
-                unsafe_allow_html=True
-            )
+                """, unsafe_allow_html=True)
             
             album_songs = [s for s in SONGS if s['album_id'] == selected_album_id]
             
